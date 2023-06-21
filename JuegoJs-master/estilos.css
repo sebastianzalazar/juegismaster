@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #C1D0B5;
+}
+
+.container {
+    font-size: 16px;
+    background-color: white;
+    width: 90vh;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(60%, 90%);
+    /*top: 50%;
+    left: 50%;*/
+    padding: 3em;
+    border-radius: 20px;
+    box-shadow: 0 1.2em 2.4em rgba(0, 0, 0, 0.25);
+}
+#opciones-container{
+    text-align: center;
+}
+#opciones-container div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+}
+#opciones-container button:disabled{
+    /* estilos cuando el boton esta desactivado*/
+    border:3px solid #666665;
+    color: grey;
+    background-color: #efefef;
+}
+#opciones-container button:active{ 
+    /* estilos cuando el boton esta activado */
+    background-color: #8c52ff;
+    border: 3px solid black;
+    color: white;
+}
+.letras-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}
+.letras-container button{
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: white;
+    cursor: pointer;
+}
+.nuevo-juego-popup{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    
+}
+#seccion-ingresar-usuario{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 0.6em 0 1.2em 0;
+}
+canvas{
+    display: block;
+    margin: auto;
+    border:10px solid rgb(61, 61, 98);
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+.resultado-texto h2{
+    font-size: 1.8em;
+    text-align: center;
+}
+.resultado-texto p{
+    font-size: 1.25em;
+    margin: 1em 0 2em 0;
+}
+.resultado-texto span{
+    font-weight: 600;
+}
+#nuevo-juego-button{
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background-color: #8c52ff;
+    color: white;
+    border: 3px solid black;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+.win-msg{
+    color: green;
+}
+.lose-msg{
+    color: red;
+}
